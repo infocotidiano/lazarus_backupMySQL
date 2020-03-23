@@ -1,0 +1,137 @@
+object frmprincipal: Tfrmprincipal
+  Left = 341
+  Height = 464
+  Top = 140
+  Width = 898
+  Caption = 'Backup MySQL / MariaDB * www.infocotidiano.com.br'
+  ClientHeight = 464
+  ClientWidth = 898
+  LCLVersion = '1.6.0.4'
+  object Panel1: TPanel
+    Left = 0
+    Height = 106
+    Top = 0
+    Width = 898
+    Align = alTop
+    ClientHeight = 106
+    ClientWidth = 898
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 24
+      Height = 15
+      Top = 10
+      Width = 123
+      Caption = 'Caminho MySQLDump'
+      ParentColor = False
+    end
+    object edtMYSQLDUMP: TEdit
+      Left = 152
+      Height = 23
+      Top = 7
+      Width = 624
+      TabOrder = 0
+      Text = 'C:\Program Files\MariaDB 10.1\bin\mysqldump.exe'
+    end
+    object Label2: TLabel
+      Left = 28
+      Height = 15
+      Top = 47
+      Width = 40
+      Caption = 'Usuario'
+      ParentColor = False
+    end
+    object edtUSUARIO: TEdit
+      Left = 88
+      Height = 23
+      Top = 44
+      Width = 136
+      TabOrder = 1
+      Text = 'root'
+    end
+    object Label3: TLabel
+      Left = 240
+      Height = 15
+      Top = 47
+      Width = 32
+      Caption = 'Senha'
+      ParentColor = False
+    end
+    object edtSENHA: TEdit
+      Left = 288
+      Height = 23
+      Top = 44
+      Width = 136
+      EchoMode = emPassword
+      PasswordChar = '*'
+      TabOrder = 2
+      Text = '3004'
+    end
+    object edtSERVIDOR: TEdit
+      Left = 503
+      Height = 23
+      Top = 44
+      Width = 136
+      TabOrder = 3
+      Text = 'localhost'
+    end
+    object Label4: TLabel
+      Left = 440
+      Height = 15
+      Top = 47
+      Width = 43
+      Caption = 'Servidor'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 47
+      Height = 15
+      Top = 79
+      Width = 40
+      Caption = 'Destino'
+      ParentColor = False
+    end
+    object edtDESTINO: TEdit
+      Left = 96
+      Height = 23
+      Top = 75
+      Width = 624
+      TabOrder = 4
+      Text = 'C:\Users\Particular\Documents\Projetos\backupMYSQL\backupMySQL.sql'
+    end
+    object Label6: TLabel
+      Left = 664
+      Height = 15
+      Top = 47
+      Width = 42
+      Caption = 'Schema'
+      ParentColor = False
+    end
+    object edtSCHEMA: TEdit
+      Left = 727
+      Height = 23
+      Top = 44
+      Width = 136
+      TabOrder = 5
+      Text = 'hermes'
+    end
+    object btnBackup: TButton
+      Left = 734
+      Height = 25
+      Top = 77
+      Width = 75
+      Caption = 'Backup'
+      OnClick = btnBackupClick
+      TabOrder = 6
+    end
+  end
+  object Memo1: TMemo
+    Left = 0
+    Height = 358
+    Top = 106
+    Width = 898
+    Align = alClient
+    Color = 8454143
+    ScrollBars = ssBoth
+    TabOrder = 1
+  end
+end
